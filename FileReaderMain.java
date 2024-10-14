@@ -16,7 +16,6 @@ public class FileReaderMain {
         for (String filePath : filePaths) {
             System.out.println("\nLecture du fichier : " + filePath);
 
-            // Lire le fichier
             try {
                 textReader.readFile(filePath);
 

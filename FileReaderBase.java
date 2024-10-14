@@ -1,8 +1,8 @@
 import java.io.*;
 
 public abstract class FileReaderBase implements FileReaderInterface {
-    protected String[] lines = new String[100]; // Supposons un maximum de 100 lignes
-    protected int lineCount = 0; // Pour suivre le nombre de lignes lues
+    protected String[] lines = new String[100];
+    protected int lineCount = 0;
 
     // Lire le fichier et stocker les lignes
     public void readFile(String filePath) {

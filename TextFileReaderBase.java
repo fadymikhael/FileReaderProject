@@ -2,11 +2,11 @@ import java.io.*;
 
 public class TextFileReaderBase implements FileReaderInterface {
 
-    // Tableau pour stocker les lignes (ici on suppose un maximum de 100 lignes)
+    // Tableau pour stocker les lignes
     protected String[] lines = new String[100];
-    protected int lineCount = 0; // Compteur pour suivre le nombre de lignes lues
+    protected int lineCount = 0;
 
-    // Lire un fichier (texte ou XML) sans ArrayList
+    // Lire un fichier (texte ou XML)
     @Override
     public void readFile(String filePath) {
         lineCount = 0;  // Réinitialiser le compteur de lignes pour chaque fichier
@@ -51,7 +51,7 @@ public class TextFileReaderBase implements FileReaderInterface {
 
     // Réinitialiser le tableau et le compteur après chaque lecture
     public void clearLines() {
-        lines = new String[100];  // Réinitialiser le tableau
-        lineCount = 0;            // Réinitialiser le compteur
+        lines = new String[100];
+        lineCount = 0;
     }
 }
